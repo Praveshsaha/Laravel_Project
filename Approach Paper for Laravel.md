@@ -21,7 +21,7 @@ The goal of this project is to develop a RESTful API using PHP Laravel, with Pos
 
 ### 2.1. Architecture Diagram
 
-![Project Diagram](project diagram.excalidraw)
+![Project Diagram](images/arcjitecture_diagram.md)
 
 ### 2.2. Description
 
