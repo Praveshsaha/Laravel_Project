@@ -9,7 +9,6 @@
    - [Description](#22-description)
    - [Implementation Steps](#23-implementation-steps)
    - [Pre-requisites](#24-pre-requisites)
-3. [Conclusion](#3-conclusion)
 
 ## 1. Objective
 
