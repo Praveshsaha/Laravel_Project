@@ -128,7 +128,7 @@ The purpose of these test cases is to ensure that the Laravel REST API, integrat
 **Scenario:** The API should reject incorrect data.  
 **Remarks:** Use Laravel’s built-in validation.
 
-- **Given** the user submits incomplete or invalid data,
+- **Given** the user submits incomplete or invalid data (Invalid email format, Weak or short password),
 - **When** they send a request to the API,
 - **Then** the API returns a `422 Unprocessable Entity` error.
 
@@ -141,7 +141,7 @@ The purpose of these test cases is to ensure that the Laravel REST API, integrat
 **Scenario:** The frontend should correctly display API data.  
 **Remarks:** Ensure proper CORS settings.
 
-- **Given** the frontend makes a valid API request,
+- **Given** the frontend makes a valid API request (Fetching user profile (Get Request), Submitting a form (post request) Saving data in database (Post request),
 - **When** the API responds,
 - **Then** the frontend correctly displays the data.
 
