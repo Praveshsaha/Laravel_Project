@@ -1,3 +1,60 @@
+# IMPLEMENTATION JOURNAL - Laravel To-Do List API with PostgreSQL
+
+## **Submitted By**
+**Pravesh Sahai**
+
+## **Submitted To**
+**Vipin Tripathi**
+
+## **Test Case Version**
+**1.0**
+
+## **Reviewer Name**
+**Manmeet Narang, Pooja Joshi**
+
+---
+
+## **Goal**
+The purpose of this project is to develop a Laravel-based To-Do List API that enables users to create, update, delete, and retrieve tasks. The system is built with PostgreSQL as the database and is containerized using Podman. It also includes a front-end UI developed with Laravel Blade templates to interact with the API.
+
+---
+
+## **Table of Contents**
+
+1. [Prerequisites](#prerequisites)
+   - [Hardware Requirements](#hardware-requirements)
+   - [Software Requirements](#software-requirements)
+   - [Network Requirements](#network-requirements)
+2. [Implementation Steps](#implementation-steps)
+   - [Step 1: Setting up the Laravel Project](#step-1-setting-up-the-laravel-project)
+   - [Step 2: Setting up PostgreSQL with Podman](#step-2-setting-up-postgresql-with-podman)
+   - [Step 3: Configure Database in Laravel](#step-3-configure-database-in-laravel)
+   - [Step 4: Creating Models and Migrations](#step-4-creating-models-and-migrations)
+   - [Step 5: Implementing the Controller](#step-5-implementing-the-controller)
+   - [Step 6: Defining Routes](#step-6-defining-routes)
+   - [Step 7: Setting up the UI with Laravel Blade](#step-7-setting-up-the-ui-with-laravel-blade)
+   - [Step 8: Testing the API](#step-8-testing-the-api)
+3. [Conclusion](#conclusion)
+
+---
+
+## **Prerequisites**
+
+### **Hardware Requirements**
+- Ubuntu OS
+- Minimum 2GB RAM
+- Minimum 10GB Disk Space
+
+### **Software Requirements**
+- Laravel 9.x
+- PostgreSQL
+- Podman
+
+### **Network Requirements**
+- Internet connection for downloading dependencies
+- Localhost setup for API testing
+
+---
 # Implementation Journal
 
 ## **Project Title:** Laravel To-Do List API with PostgreSQL
