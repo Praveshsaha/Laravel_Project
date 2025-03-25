@@ -61,7 +61,10 @@ The goal of this project is to develop a **Laravel-based To-Do List API** that a
 
 **Test Run Date**: <Date>
 
-**Result**: Pending/Pass/Fail
+**Result**:Pass
+
+![Screenshot from 2025-03-26 00-47-09](https://github.com/user-attachments/assets/fac1ca1c-7d26-4943-b033-7b0839920c06)
+
 
 ---
 
@@ -79,7 +82,9 @@ The goal of this project is to develop a **Laravel-based To-Do List API** that a
 
 **Test Run Date**: <Date>
 
-**Result**: Pending/Pass/Fail
+**Result**:Pass
+![Screenshot from 2025-03-26 00-50-48](https://github.com/user-attachments/assets/1cb3c8cb-f90d-4fd3-8949-8f95745ab753)
+
 
 ---
 
@@ -97,7 +102,9 @@ The goal of this project is to develop a **Laravel-based To-Do List API** that a
 
 **Test Run Date**: <Date>
 
-**Result**: Pending/Pass/Fail
+**Result**:Pass
+
+![Screenshot from 2025-03-26 00-52-11](https://github.com/user-attachments/assets/cd625a82-23b2-47b8-b6e8-bb82c65329f7)
 
 ---
 
@@ -115,7 +122,9 @@ The goal of this project is to develop a **Laravel-based To-Do List API** that a
 
 **Test Run Date**: <Date>
 
-**Result**: Pending/Pass/Fail
+**Result**:Pass
+
+![Screenshot from 2025-03-26 00-53-20](https://github.com/user-attachments/assets/5dfe567b-8d6f-480b-aabd-fa52ae284234)
 
 ---
 
@@ -133,7 +142,9 @@ The goal of this project is to develop a **Laravel-based To-Do List API** that a
 
 **Test Run Date**: <Date>
 
-**Result**: Pending/Pass/Fail
+**Result**:Pass
+
+![Screenshot from 2025-03-26 00-54-27](https://github.com/user-attachments/assets/fae14a1f-4877-4bcf-9d62-42702779dfd9)
 
 ---
 
@@ -151,7 +162,9 @@ The goal of this project is to develop a **Laravel-based To-Do List API** that a
 
 **Test Run Date**: <Date>
 
-**Result**: Pending/Pass/Fail
+**Result**:Pass
+
+![Screenshot from 2025-03-26 00-56-49](https://github.com/user-attachments/assets/eef00270-399f-4f1f-9b36-75411710520f)
 
 ---
 
@@ -169,7 +182,9 @@ The goal of this project is to develop a **Laravel-based To-Do List API** that a
 
 **Test Run Date**: <Date>
 
-**Result**: Pending/Pass/Fail
+**Result**:Pass
+
+![Screenshot from 2025-03-26 00-57-37](https://github.com/user-attachments/assets/f8449322-8215-4f72-869d-abbe88f914b4)
 
 ---
 
@@ -187,7 +202,9 @@ The goal of this project is to develop a **Laravel-based To-Do List API** that a
 
 **Test Run Date**: <Date>
 
-**Result**: Pending/Pass/Fail
+**Result**:Pass
+
+![Screenshot from 2025-03-26 00-58-36](https://github.com/user-attachments/assets/b1dd9d54-2b69-4212-ab0e-db48b1ce3fb9)
 
 ---
 
@@ -205,7 +222,9 @@ The goal of this project is to develop a **Laravel-based To-Do List API** that a
 
 **Test Run Date**: <Date>
 
-**Result**: Pending/Pass/Fail
+**Result**:Pass
+
+![Screenshot from 2025-03-26 00-59-21](https://github.com/user-attachments/assets/103b30ee-ceb4-4064-8224-1e4a27f130ac)
 
 ---
 
@@ -223,6 +242,8 @@ The goal of this project is to develop a **Laravel-based To-Do List API** that a
 
 **Test Run Date**: <Date>
 
-**Result**: Pending/Pass/Fail
+**Result**:Pass
+
+![Screenshot from 2025-03-26 01-00-34](https://github.com/user-attachments/assets/8d7d4bd5-470e-490f-98dc-d5a48065de20)
 
 ---
