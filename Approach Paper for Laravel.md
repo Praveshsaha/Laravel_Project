@@ -33,7 +33,9 @@ The goal of this project is to develop a **RESTful API** using **PHP Laravel**, 
 ### **Approach: Laravel API with Keycloak Authentication & Blade UI**
 
 ### **Architecture Diagram**
-*(Insert architecture diagram here)*
+![app diagram new](https://github.com/user-attachments/assets/3422ad6c-b12d-4c3c-9cee-94c24f94b422)
+
+
 
 ### **Description**
 #### **Solution:**
