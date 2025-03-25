@@ -85,9 +85,9 @@ podman pull docker.io/library/postgres:latest
 ```sh
 podman run -d \
   --name postgres \
-  -e POSTGRES_USER=myuser \
-  -e POSTGRES_PASSWORD=mypassword \
-  -e POSTGRES_DB=tododb \
+  -e POSTGRES_USER=pravesh \
+  -e POSTGRES_PASSWORD=securepassword \
+  -e POSTGRES_DB=todo_app4_db \
   -v /home/user/p-data:/var/lib/postgresql/data \
   docker.io/library/postgres:latest
 ```
@@ -105,9 +105,9 @@ Modify the `.env` file with PostgreSQL credentials:
 DB_CONNECTION=pgsql
 DB_HOST=127.0.0.1
 DB_PORT=5432
-DB_DATABASE=tododb
-DB_USERNAME=myuser
-DB_PASSWORD=mypassword
+DB_DATABASE=todo_app4_db
+DB_USERNAME=pravesh
+DB_PASSWORD=securepassword
 ```
 
 Update `config/database.php` to ensure PostgreSQL is set as the default database:
