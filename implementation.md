@@ -49,6 +49,7 @@ The purpose of this project is to develop a Laravel-based To-Do List API that en
 - Laravel 9.x
 - PostgreSQL
 - Podman
+- Keycloak
 
 ### **Network Requirements**
 - Internet connection for downloading dependencies
