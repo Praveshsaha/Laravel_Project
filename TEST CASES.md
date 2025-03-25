@@ -1,167 +1,228 @@
-**TEST CASES - Laravel REST API with PostgreSQL & Keycloak**
+**TEST CASES - Laravel To-Do List API**
 
-**Submitted By**  
-Pravesh, Abhishek
+**Submitted By**
 
-**Submitted To**  
-Vipin Tripathi  
+Pravesh Sahai
 
-**Test Case Version**  
+**Submitted To**
+
+Vipin Tripathi
+
+**Test Case Version**
+
 1.0
 
-**Reviewer Name**  
+**Reviewer Name**
+
 Manmeet Narang, Pooja Joshi
 
 ---
 
-## **Goal**
-The purpose of these test cases is to ensure that the Laravel REST API, integrated with PostgreSQL and Keycloak authentication, functions correctly, securely, and efficiently. The test cases focus on verifying API accessibility, database interactions, authentication, data validation, error handling, and overall system performance.
+### **Goal**
+The goal of this project is to develop a **Laravel-based To-Do List API** that allows users to perform **CRUD (Create, Read, Update, Delete) operations** on tasks. The API is built using **PHP Laravel** with a **PostgreSQL database** running in a **Podman container**, and a frontend UI using **Laravel Blade templates** to interact with the API.
 
 ---
 
-## **Table of Contents**
-
-1. **Test Environment**  
-2. **Test Cases**  
-   - TC1: API Accessibility  
-   - TC2: Database Connection  
-   - TC3: User Registration  
-   - TC4: User Login  
-   - TC5: Fetch User Profile  
-   - TC6: Save Data in Database  
-   - TC7: Data Validation  
-   - TC8: Frontend Integration  
-   - TC9: Error Handling  
-
+### **Table of Contents**
+- [Test Environment](#test-environment)
+- [TC1: Verify Database is Running](#tc1-verify-database-is-running)
+- [TC2: Verify API is Running](#tc2-verify-api-is-running)
+- [TC3: Verify API Can Connect to Database](#tc3-verify-api-can-connect-to-database)
+- [TC4: Verify UI Loads Correctly](#tc4-verify-ui-loads-correctly)
+- [TC5: Verify API Returns Empty List When No Tasks Exist](#tc5-verify-api-returns-empty-list-when-no-tasks-exist)
+- [TC6: Create a New Task](#tc6-create-a-new-task)
+- [TC7: Update an Existing Task](#tc7-update-an-existing-task)
+- [TC8: Mark a Task as Completed](#tc8-mark-a-task-as-completed)
+- [TC9: Delete a Task](#tc9-delete-a-task)
+- [TC10: Validate Required Fields in Task Creation](#tc10-validate-required-fields-in-task-creation)
 ---
 
 ## **Test Environment**
-- **Operating System:** Ubuntu (using Podman for containerization)
-- **Backend Framework:** Laravel (PHP)
-- **Database:** PostgreSQL
-- **Authentication:** Keycloak
-- **Server:** Laravel's built-in server Apache
-- **Version Control:** Git
-- **Logging & Debugging:** Laravel logs, PostgreSQL logs
+- **Frontend URL**: `http://127.0.0.1:8000`
+- **API Base URL**: `http://127.0.0.1:8000/api/todos`
+- **Database**: PostgreSQL running in a Podman container
+- **Podman Container ID**: `92ec1277009d`
+- **Laravel Version**: 12.x
+- **PHP Version**: 8.3
 
 ---
 
-### **TC1: API Accessibility**
-**Scenario:** Ensure that the API is accessible and responding.  
-**Remarks:** API routes must be correctly set in `routes/api.php`.
+### **TC1: Verify Database is Running**
+**Scenario**: The PostgreSQL database is running.
 
-- **Given** the API server is running,
-- **When** a user sends a request to an API endpoint,
-- **Then** the server responds with a `200 OK` status.
+**Given**
+- The PostgreSQL container is started.
 
-**Test Run Date:**   
-**Result:**   
+**When**
+- The tester runs `podman ps`.
 
----
+**Then**
+- The container is listed as running.
 
-### **TC2: Database Connection**
-**Scenario:** Validate connection between Laravel and PostgreSQL.  
-**Remarks:** Ensure correct `.env` configurations.
+**Test Run Date**: <Date>
 
-- **Given** the database details are correctly set in the `.env` file,
-- **When** the Laravel app starts,
-- **Then** it should connect to PostgreSQL successfully.
-
-**Test Run Date:**   
-**Result:**   
+**Result**: Pending/Pass/Fail
 
 ---
 
-### **TC3: User Registration**
-**Scenario:** A new user should be able to register via API.  
-**Remarks:** Ensure email uniqueness and password encryption.
+### **TC2: Verify API is Running**
+**Scenario**: The API is active and responsive.
 
-- **Given** a user provides valid registration details (name, email, password),
-- **When** they send a `POST` request to `/api/register`,
-- **Then** a new user is created, and the API returns `201 Created`.
+**Given**
+- Laravel is running (`php artisan serve`).
 
-**Test Run Date:**   
-**Result:**   
+**When**
+- A GET request is sent to `/api/todos`.
 
----
+**Then**
+- The API returns `200 OK`.
 
-### **TC4: User Login**
-**Scenario:** A registered user should be able to log in.  
-**Remarks:** Invalid credentials should return `401 Unauthorized`.
+**Test Run Date**: <Date>
 
-- **Given** a user provides valid login details (email, password).
-- **When** they send a `POST` request to `/api/login`,
-- **Then** the API returns an authentication token with `200 OK`.
-
-**Test Run Date:**   
-**Result:**   
+**Result**: Pending/Pass/Fail
 
 ---
 
-### **TC5: Fetch User Profile**
-**Scenario:** A logged-in user should fetch their profile details.  
-**Remarks:** Unauthorized users should get a `401` error.
+### **TC3: Verify API Can Connect to Database**
+**Scenario**: Laravel API successfully connects to PostgreSQL.
 
-- **Given** the user is logged in,
-- **When** they send a `GET` request to `/api/profile`,
-- **Then** the API returns user details with `200 OK`.
+**Given**
+- The `.env` file contains correct DB credentials.
 
-**Test Run Date:**   
-**Result:**   
+**When**
+- The tester runs `php artisan migrate:status`.
 
----
+**Then**
+- The command returns `Yes` for applied migrations.
 
-### **TC6: Save Data in Database**
-**Scenario:** Data should be correctly saved in PostgreSQL.  
-**Remarks:** Verify if the database table updates properly.
+**Test Run Date**: <Date>
 
-- **Given** the user sends valid data via `POST` request,
-- **When** the request reaches the API,
-- **Then** the data is stored successfully.
-
-**Test Run Date:**   
-**Result:**   
+**Result**: Pending/Pass/Fail
 
 ---
 
-### **TC7: Data Validation**
-**Scenario:** The API should reject incorrect data.  
-**Remarks:** Use Laravel’s built-in validation.
+### **TC4: Verify UI Loads Correctly**
+**Scenario**: The UI loads without errors.
 
-- **Given** the user submits incomplete or invalid data (Invalid email format, Weak or short password),
-- **When** they send a request to the API,
-- **Then** the API returns a `422 Unprocessable Entity` error.
+**Given**
+- The frontend is deployed.
 
-**Test Run Date:**   
-**Result:**   
+**When**
+- The user opens `http://127.0.0.1:8000` in the browser.
 
----
+**Then**
+- The To-Do List page loads successfully without errors.
 
-### **TC8: Frontend Integration**
-**Scenario:** The frontend should correctly display API data.  
-**Remarks:** Ensure proper CORS settings.
+**Test Run Date**: <Date>
 
-- **Given** the frontend makes a valid API request (Fetching user profile (Get Request), Submitting a form (post request) Saving data in database (Post request),
-- **When** the API responds,
-- **Then** the frontend correctly displays the data.
-
-**Test Run Date:**   
-**Result:**   
+**Result**: Pending/Pass/Fail
 
 ---
 
-### **TC9: Error Handling**
-**Scenario:** API should return proper error messages.  
-**Remarks:** Standardize error responses.
+### **TC5: Verify API Returns Empty List When No Tasks Exist**
+**Scenario**: API returns an empty array when there are no tasks.
 
-- **Given** an API request fails due to an issue,
-- **When** an error occurs,
-- **Then** the API returns a response with an error message.
+**Given**
+- The `todos` table is empty.
 
-**Test Run Date:**   
-**Result:**   
+**When**
+- A GET request is sent to `/api/todos`.
+
+**Then**
+- The API returns `[]`.
+
+**Test Run Date**: <Date>
+
+**Result**: Pending/Pass/Fail
 
 ---
 
+### **TC6: Create a New Task**
+**Scenario**: Users can create a task.
 
+**Given**
+- The UI is accessible.
 
+**When**
+- The user fills in a title and clicks "Add Task".
+
+**Then**
+- The task is saved in the database.
+
+**Test Run Date**: <Date>
+
+**Result**: Pending/Pass/Fail
+
+---
+
+### **TC7: Update an Existing Task**
+**Scenario**: Users can update a task.
+
+**Given**
+- The task exists.
+
+**When**
+- The user clicks "Edit", modifies the title, and clicks "Save".
+
+**Then**
+- The task is updated in the database.
+
+**Test Run Date**: <Date>
+
+**Result**: Pending/Pass/Fail
+
+---
+
+### **TC8: Mark a Task as Completed**
+**Scenario**: Users can mark tasks as completed.
+
+**Given**
+- A task exists.
+
+**When**
+- The user checks the "completed" box.
+
+**Then**
+- The database updates the task as completed.
+
+**Test Run Date**: <Date>
+
+**Result**: Pending/Pass/Fail
+
+---
+
+### **TC9: Delete a Task**
+**Scenario**: Users can delete a task.
+
+**Given**
+- A task exists.
+
+**When**
+- The user clicks "Delete".
+
+**Then**
+- The task is removed from the database.
+
+**Test Run Date**: <Date>
+
+**Result**: Pending/Pass/Fail
+
+---
+
+### **TC10: Validate Required Fields in Task Creation**
+**Scenario**: The task title is required.
+
+**Given**
+- The UI is accessible.
+
+**When**
+- The user tries to add a task without a title.
+
+**Then**
+- An error message appears.
+
+**Test Run Date**: <Date>
+
+**Result**: Pending/Pass/Fail
+
+---
