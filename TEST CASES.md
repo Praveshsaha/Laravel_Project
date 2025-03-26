@@ -29,11 +29,11 @@ The goal of this project is to develop a **Laravel-based To-Do List API** that a
 - [TC2: Verify API is Running](#tc2-verify-api-is-running)
 - [TC3: Verify API Can Connect to Database](#tc3-verify-api-can-connect-to-database)
 - [TC4: Verify UI Loads Correctly](#tc4-verify-ui-loads-correctly)
-- [TC6: Create a New Task](#tc6-create-a-new-task)
-- [TC7: Update an Existing Task](#tc7-update-an-existing-task)
-- [TC8: Mark a Task as Completed](#tc8-mark-a-task-as-completed)
-- [TC9: Delete a Task](#tc9-delete-a-task)
-- [TC10: Validate Required Fields in Task Creation](#tc10-validate-required-fields-in-task-creation)
+- [TC5: Create a New Task](#tc6-create-a-new-task)
+- [TC6: Update an Existing Task](#tc7-update-an-existing-task)
+- [TC7: Mark a Task as Completed](#tc8-mark-a-task-as-completed)
+- [TC8: Delete a Task](#tc9-delete-a-task)
+- [TC9: Validate Required Fields in Task Creation](#tc10-validate-required-fields-in-task-creation)
 ---
 
 ## **Test Environment**
