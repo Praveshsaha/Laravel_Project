@@ -29,7 +29,6 @@ The goal of this project is to develop a **Laravel-based To-Do List API** that a
 - [TC2: Verify API is Running](#tc2-verify-api-is-running)
 - [TC3: Verify API Can Connect to Database](#tc3-verify-api-can-connect-to-database)
 - [TC4: Verify UI Loads Correctly](#tc4-verify-ui-loads-correctly)
-- [TC5: Verify API Returns Empty List When No Tasks Exist](#tc5-verify-api-returns-empty-list-when-no-tasks-exist)
 - [TC6: Create a New Task](#tc6-create-a-new-task)
 - [TC7: Update an Existing Task](#tc7-update-an-existing-task)
 - [TC8: Mark a Task as Completed](#tc8-mark-a-task-as-completed)
