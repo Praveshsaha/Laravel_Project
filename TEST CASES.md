@@ -126,29 +126,10 @@ The goal of this project is to develop a **Laravel-based To-Do List API** that a
 
 ![Screenshot from 2025-03-26 00-53-20](https://github.com/user-attachments/assets/5dfe567b-8d6f-480b-aabd-fa52ae284234)
 
----
-
-### **TC5: Verify API Returns Empty List When No Tasks Exist**
-**Scenario**: API returns an empty array when there are no tasks.
-
-**Given**
-- The `todos` table is empty.
-
-**When**
-- A GET request is sent to `/api/todos`.
-
-**Then**
-- The API returns `[]`.
-
-**Test Run Date**: <Date>
-
-**Result**:Pass
-
-![Screenshot from 2025-03-26 00-54-27](https://github.com/user-attachments/assets/fae14a1f-4877-4bcf-9d62-42702779dfd9)
 
 ---
 
-### **TC6: Create a New Task**
+### **TC5: Create a New Task**
 **Scenario**: Users can create a task.
 
 **Given**
@@ -168,7 +149,7 @@ The goal of this project is to develop a **Laravel-based To-Do List API** that a
 
 ---
 
-### **TC7: Update an Existing Task**
+### **TC6: Update an Existing Task**
 **Scenario**: Users can update a task.
 
 **Given**
@@ -188,7 +169,7 @@ The goal of this project is to develop a **Laravel-based To-Do List API** that a
 
 ---
 
-### **TC8: Mark a Task as Completed**
+### **TC7: Mark a Task as Completed**
 **Scenario**: Users can mark tasks as completed.
 
 **Given**
@@ -208,7 +189,7 @@ The goal of this project is to develop a **Laravel-based To-Do List API** that a
 
 ---
 
-### **TC9: Delete a Task**
+### **TC8: Delete a Task**
 **Scenario**: Users can delete a task.
 
 **Given**
@@ -228,7 +209,7 @@ The goal of this project is to develop a **Laravel-based To-Do List API** that a
 
 ---
 
-### **TC10: Validate Required Fields in Task Creation**
+### **TC9: Validate Required Fields in Task Creation**
 **Scenario**: The task title is required.
 
 **Given**
